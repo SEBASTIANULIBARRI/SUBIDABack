@@ -29,7 +29,7 @@ app.get('/perfil', (req, res) => {res.sendFile(path.join(__dirname,'public','pag
 app.get('/registrarse', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','registrarse.html'));});
 app.get('/addMovie', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','user.html'));});
 
-const PORT = process.env.ALWAYSDATA_HTTPD_PORT || 3000;
+const PORT =  process.env.PORT || 4000;
 const IP = process.env.ALWAYSDATA_HTTPD_IP || '127.0.0.1';
 
 app.listen(PORT, IP, () => {
