@@ -30,8 +30,7 @@ app.get('/registrarse', (req, res) => {res.sendFile(path.join(__dirname,'public'
 app.get('/addMovie', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','user.html'));});
 
 const PORT =  process.env.PORT || 4000;
-const IP = process.env.ALWAYSDATA_HTTPD_IP || '127.0.0.1';
 
-app.listen(PORT, IP, () => {
-  console.log(`Server running at http://${IP}:${PORT}/`);
+app.listen(PORT, () => {
+  console.log(`Server running at ${PORT}/`);
 });
