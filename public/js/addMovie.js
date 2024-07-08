@@ -12,7 +12,7 @@ document.getElementById('addMovieForm').addEventListener('submit', function(even
         categoria_id: document.getElementById('categoria_id').value
     };
     //Enviamos una solicitud POST en el endpoint especificado con el paquete movieData convertido a json
-    fetch('http://localhost:3000/api/peliculas', {
+    fetch('https://subidaback-1.onrender.com/api/peliculas', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
