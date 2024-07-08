@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
-const dotenvconfig=require( 'dotenv/config');
+require('dotenv').config()
 
 
 const moviesRoutes = require('./routes/moviesRoutes');
