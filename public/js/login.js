@@ -1,4 +1,4 @@
-const urlBBDD = 'http://localhost:3000/api/usuarios'
+const urlBBDD = 'https://subidaback-1.onrender.com/api/usuarios'
 
 const my_storage = window.localStorage;
 console.log(my_storage.getItem('password'));
